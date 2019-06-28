@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form </title>
+	<script type="text/javascript" src="he.js"></script>
+</head>
+<body>
+	<h2 style="text-align: center;color: SlateBlue"> Student registration Form</h2>
+	<div align="center" style=" ">
+		<table align="center"; cellpadding="20" style=" background-color: SlateBlue ;border-collapse:collapse;  border: 2px solid navy "><TR><td>
+	Name:</td><td></td><td><input type="text" name="name" placeholder="Eg:Arjun" id="name"><br><div id="lopp1"></td></TR>
+	
+	<TR><td>email:</td><td></td><td><input type="email" placeholder="Eg:Arjun@great.com" id="emai" name="" ><br></td><td style="color: red"><div id="lopp2"></td></TR>
+	
+	<TR><td>Mobile number:</td><td></td><td><input type="number" min="911000000000" max="919999999999" placeholder="Eg:919694939291" id="mname" name=""><br></td><td style="color: red"><div id="lopp3"></td></TR>
+	
+	<TR><td>Gender:</td><td></td><td><input type="radio" name="gd" id="Gender" value="male">Male
+	<input type="radio" name="gd" id="Gender" value="female">Female<br></td><td style="color: red"><div id="lopp4"></td></TR>
+	
+	<TR><td>State</td><td></td><td><select id="State">
+		<option  value="1">Kerala</option>
+		<option  value="2">tamilnadu</option>
+		<option value="3">karnataka</option>
+		<option value="4">andhra predesh</option>
+	</select><br></td><td style="color: red"><div id="lopp5"></td></TR>
+	
+	<TR><td>Class:</td><td></td><td><select id="cls">
+		<option value="12">XII</option>
+		<option value="11">XI</option>
+		<option value="10">X</option>
+		<option value="9">IX</option>
+		<option value="8">VIII</option>
+		<option value="7">VII</option>
+		<option value="6">VI</option>
+		<option value="5">V</option>
+		<option value="4">IV</option>
+		<option value="3">III</option>
+		<option value="2">II</option>
+		<option value="1">I</option>
+	</select><br></td><td style="color: red"><div id="lopp6"></td></TR>
+<tr>
+<td>Age</td>
+ <td></td>
+<td>
+    <input type="number" id="Age" name="Age" min="0" max="110">
+
+ 	</td><td style="color: red"><div id="lopp7"></td></tr>
+ 	<TR><td>
+	Address:</td><td></td><td><textarea rows="2" cols="21" required="" id="Address"></textarea></td><td style="color: red"><div id="lopp8"></td></TR>
+	<tr>
+<td colspan="2" align="center">
+<input  align="center" type="submit" value="Submit" onclick="zai()">
+<input type="reset" value="Reset">
+</td>
+</tr></table>
+    </div>
+
+</body>
+</html>

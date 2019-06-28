@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="lights.js"></script>
+	<title>T_LIGHTS</title>
+	<style>
+	.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+</head>
+<body style="height: 1000px;width:1000px;margin-left: auto;margin-right: auto;">
+<div align="center">
+<div >
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="1" id="red2" style="fill:black;" />
+</svg>
+<br>
+</div>
+<div>
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="1" id="yellow2" style="fill:black" />
+</svg>
+<br>
+</div>
+<div>
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="1" id="green2" style="fill:black" />
+</svg>
+<br>
+</div>
+<div style="margin-top: 50px;">
+	<button onclick="auto()">AUTO</button>
+	<button onclick="red()">RED</button>
+	<button onclick="yellow()">YELLOW</button>
+	<button onclick="green()">GREEN</button>
+	<br>
+	<button onclick="blinkyellow() ">Blink YELLOW</button>
+	<button onclick="blank() ">STOP</button>
+	<button onclick="allon() ">ON</button>
+</div>		
+			
+</div>
+</body>
+</html>

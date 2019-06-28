@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  var apm ="AM"
+  h = checkTime(h) 
+  m = checkTime(m);
+  s = checkTime(s);
+    if(h==0){
+        h=12;}
+    if(h>12){
+        h=h-12;
+        apm="PM";}
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s+ " "+ apm ;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i}; 
+  return i;
+}
+
+</script>
+<style >
+  #txt{
+        position:fixed;
+        top:50%;
+        left:50%;
+        font-size:100px;
+        border:1px solid black;
+        transform:translateX(-50%) translateY(-50%);
+        
+        }
+</style>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="utf-8"/>
+    <title>Sign UP</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+   <style>
+       #div1{
+           width: 70%;
+           
+           margin-left: auto;
+           margin-right: auto;
+       }
+   </style>
+<body>
+    <form>
+        <center>
+        <h1>AJAX </h1>
+    </center>
+        <div id="div1">
+        <ul id = 'ords'> </ul>
+    </div>
+      
+           
+        <script>
+                //         $("button").click(function(){
+                //   $("#div1").load("'https://jsonplaceholder.typicode.com/posts'", function(responseTxt, statusTxt, xhr){
+                //     if(statusTxt == "success")
+                //     $(document).ready(function(){
+                //   $("button").click(function(){
+                //     $.get("demo_test.asp", function(data, status){
+                //       htmlstring='userId:'+ord.userId+' ID :'+ord.id+' Title:'+ord.title+ 'Body :' +ord.body+'
+                //       cont.insertAdjacentHTML('beforeend',htmlstring);
+                //     });
+                //   });
+                // });
+                // function renterHTML(data){
+                // var htmlstring='';
+                // for(i=0;i<data.length;i++){
+                // htmlstring+="<p> name  :"+data[i].name+"<br> code  :"+data[i].code+".</p>";
+                // }
+                // cont.insertAdjacentHTML('beforeend',htmlstring);
+                // }
+                // var cont=document.getElementById("ords");
+                $(function (){
+                    var $ords= $('#ords')
+                    $.ajax({
+                        type: 'GET',
+                        url: 'https://jsonplaceholder.typicode.com/posts',
+                        success : function(ords){
+                            
+                            // var ourData=JSON.parse(ords.responseText);
+                            $.each(ords ,function(i , tms){
+                                 $ords.append('<li><b>userId:</b>'+tms.userId+'<br><b> ID :</b>'+tms.id+'<br><b> Title:</b>'+tms.title+ '<br><b>Body :</b>' +tms.body+'</li>');
+                                //  cont.insertAdjacentHTML('beforeend','<li> <b>userId  :</b>'+tms.userId+'<br><b> ID :</b> '+tms.id +'<br><b> Title  :</b>'+tms.title+ '<br>Body :' +tms.body+'</li>');
+                                // $('#ords').attr('id').html('<li> <b>userId  :</b>'+tms.userId+'<br><b> ID :</b> '+tms.id +'<br><b> Title  :</b>'+tms.title+ '<br>Body :' +tms.body+'</li>');
+
+                            });
+                           
+                        }
+                
+                    });
+                });
+                    </script>
+</form>
+</body>
+</html>

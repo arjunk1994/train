@@ -1,0 +1,68 @@
+		.btn1 {
+			  background-color: green;
+			  border: none;
+			  color: silver;
+			  
+
+			  
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  
+			  cursor: pointer;
+			  height: 40px;
+			  width: 110px;
+		}
+		.btn2 {
+			  background-color: grey;
+			  border: none;
+			  color: silver;
+			  
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  
+			  cursor: pointer;
+			  height: 40px;
+			  width: 110px;
+		}
+		.btn3 {
+			  background-color: red;
+			  border: none;
+			  color: silver;
+			  
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  
+			  cursor: pointer;
+			  height: 40px;
+			  width: 110px;
+		}
+		.btn4 {
+			  background-color: blue;
+			  border: none;
+			  color: silver;
+			  
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  
+			  cursor: pointer;
+			  height: 40px;
+			  width: 110px;
+		}
+		
+		h1{
+			color: green;			
+		}
+		#dis{
+			float: right;
+			width: 600px;
+			overflow: scroll;
+		}
+
