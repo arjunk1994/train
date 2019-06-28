@@ -1,0 +1,45 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	#container{
+		width: 500px
+		height:800px;
+	}
+</style>
+
+<body>
+	<form action="{%url 'Pollinternal'%}" method="post" name="sign up for Arjun">
+{% csrf_token %}
+<div id="container">
+	<h1>how great is arjun</h1>
+     
+                <img width="628" height="353" class="ba1" src='{% static "king.jpeg" %}' >
+    <div style=" margin-bottom:-50px; ">
+                
+
+                  <input class="ba" data-msg-required="Choose one of the options" required="required" type="radio" value="1" name="a1" id="choice" aria-required="true">
+                  <label class="m_option_label" for="choice">Arjun is Great</label>
+               
+                  <input class="ba" data-msg-required="Choose one of the options" required="required" type="radio" value="2" name="a1" id="choice" aria-required="true">
+                  <label >viva la Arjun</label>
+              
+                  <input class="ba" data-msg-required="Choose one of the options" required="required" type="radio" value="3" name="a1" id="choice" aria-required="true">
+                   <label class="m_option_label" for="choice">for Arjun</label>
+                 
+                  <input class="ba" data-msg-required="Choose one of the options" required="required" type="radio" value="4" name="a1" id="choice" aria-required="true">
+                  <label class="m_option_label" for="choice">Great Arjun</label>
+                  <input type="submit" name="">
+                
+
+</div>
+</div>
+</form>
+
+</body>
+</html>
