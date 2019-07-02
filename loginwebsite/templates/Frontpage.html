@@ -1,0 +1,14 @@
+{% load staticfiles %}
+{% include "header.html" %}
+{% block content %}
+{% csrf_token %}
+<button type="button" class="btn btn-primary" onclick="login()">login</button>
+
+
+<button type="button" class="btn btn-success">register</button>
+
+
+<button type="button" class="btn btn-info">lol try me</button>
+
+
+{% endblock %}
